@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+{% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Your Name | {% block title %}{% endblock title %}</title>
+  <meta
+    content="{% lorem 10 w random %}"
+    name="description">
+  <meta property="og:image"
+    content="https://cdn.discordapp.com/attachments/967571613337911356/989993526253191238/DEE8C6CD-F31C-4CB2-B852-EBF7FF8BF373.jpg">
+  <meta name="theme-color" content="#5c00e9">
+  <meta name="keywords" content="Ahad,Ahad Noor,Ahad aka cruel,python,html,javascript">
+  <link
+    href={% static 'assets/ahadLogo.ico' %}
+    rel="icon" sizes="96×96 144×144">
+  <link
+  href={% static 'assets/ahadLogo.ico' %}
+  rel="icon" sizes="96×96 144×144">
+  <link href={% static "vendor/bootstrap/css/bootstrap.min.css" %} rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+  <link href={% static 'vendor/bootstrap-icons/bootstrap-icons.css' %} rel="stylesheet">
+  <link href={% static 'vendor/glightbox/css/glightbox.min.css' %} rel="stylesheet">
+  <link href={% static 'vendor/swiper/swiper-bundle.min.css' %} rel="stylesheet">
+  <link href="https://us-east-1.tixte.net/uploads/ahad.is-from.space/style.css" rel="stylesheet">
+</head>
+
+<body>
+  {% block body %} {% endblock body %}
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Ahad Noor</strong>. All Rights Reserved</p>
+            <div class="credits">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <script src={% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}></script>
+  <script src={% static 'vendor/glightbox/js/glightbox.min.js' %}></script>
+  <script src={% static 'vendor/swiper/swiper-bundle.min.js' %}></script>
+  <script src={% static 'vendor/typed.js/typed.min.js' %}></script>
+
+  <script src={% static 'js/main.js' %}></script>
+</body>
+</html>

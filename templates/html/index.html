@@ -1,0 +1,122 @@
+{% extends 'html/base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div>
+      <div class="H1">
+
+        <h1 class="logo"><a href="#">Ahad Noor</a></h1>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="https://itscruel.cf">Ahad</a></li>
+          <li><a class="nav-link scrollto" href="https://thevunit.vivre.cf">Vivre</a></li>
+          <li><a class="nav-link scrollto" href="https://thevunit.vivremusic.cf">Vivre Music</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+  <div id="hero" class="hero route bg-image"
+    style="background-image: url({% static 'assets/bg.gif' %})">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h1 class="hero-title mb-4" id="ahad">Your Name</h1>
+          <p class="hero-subtitle"><span class="typed"
+              data-typed-items="Your, Skills, Other than, Skidding"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img
+                          src="https://media.discordapp.net/attachments/840846571326275609/1025147485150249021/unknown.png"
+                          class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>Ahad Noor aka Cruel Dev</span></p>
+                        <p><span class="title-s">Email: </span> <span>contact@itscruel.cf</span></p>
+                        <p><span class="title-s">Discord: </span> <span>Ahad#3257</span></p>
+                        <p><span class="title-s">Instagram: </span> <span>ahadnoor._</span></p>
+                        <p><span class="title-s">Twitter: </span> <span>19Ahadnoor</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Languages</p>
+                    <span>JavaScript:</span> <span class="pull-right">83%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 83%;" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Python:</span> <span class="pull-right">79%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 79%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>HTML:</span> <span class="pull-right">99%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>CSS:</span> <span class="pull-right">97%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 97%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    <p class="lead">
+                      {% lorem 40 w random %}
+                    </p>
+                    <p class="lead">
+                      {% lorem 50 w random %}
+                    </p>
+                    <p class="lead">
+                      {% lorem 40 w random %}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  {% endblock body %}
