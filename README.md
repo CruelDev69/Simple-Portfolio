@@ -11,7 +11,7 @@ Type `py manage.py runserver` in console to run localhost server.
 You can host it on heroku easiy just connect your repo to heroku app and start worker process in resources tab.
 ***
 
-<p align="center"><img width="600px" src="./static/assets/screenshot.png"/></p>
+<p align="center"><img width="600px" src="./static/assets/screenshot.PNG"/></p>
 
 ***
 
